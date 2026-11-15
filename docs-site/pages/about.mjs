@@ -23,8 +23,8 @@ export default [
   body: `
 <section id="about">
 <h2>Free, and it stays free</h2>
-<p>EasyGSTBilling is built and maintained by <a href="${SITE.publisher.url}">EasyGSTBilling</a>. No ads, no account, no locked features, and your invoices never leave your computer. The full source code is on <a href="${SITE.repo}">GitHub</a> under the MIT licence.</p>
-<p><b>Safe and private</b> lists what happens to your data: it stays on this computer, no account, works offline, no tracking, other computers cannot open it, open source, a safe install, daily backups, the PIN lock, problem reports, security fixes, and your part. Each point opens its part of <a href="security.html">Is it safe? Security and privacy</a>.</p>
+<p>EasyGSTBilling is built and maintained by <a href="${SITE.publisher.url}">EasyGSTBilling</a>. No ads, no account, no locked features, and your invoices never leave your computer. The full source code is on <a href="${SITE.repo}">GitHub</a>, so anyone can read what the app does.</p>
+<p><b>Safe and private</b> lists what happens to your data: it stays on this computer, no account, works offline, no tracking, other computers cannot open it, source you can read, a safe install, daily backups, the PIN lock, problem reports, security fixes, and your part. Each point opens its part of <a href="security.html">Is it safe? Security and privacy</a>.</p>
 <p>EasyGSTBilling is based on Free GST Billing Software by DiceCodes, released under the MIT licence.</p>
 </section>
 

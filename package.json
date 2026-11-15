@@ -1,9 +1,10 @@
 {
   "name": "easygstbilling",
   "version": "1.10.85",
-  "description": "Free, open-source GST invoice & billing software for India. Tax Invoice, Proforma, Credit Note, Bill of Supply, Delivery Challan, GSTR-1 / GSTR-3B JSON exports, GSTR-2B reconciliation, e-Way Bill, TDS / TCS reports (Form 26Q / 27EQ), multi-currency for 22 countries, per-line custom units, rich-text Terms with 13 India presets, granular backup with optional Google Drive sync. Offline-first PWA. By EasyGSTBilling.",
+  "description": "EasyGSTBilling: offline-first GST invoice & billing software for India. Tax Invoice, Proforma, Credit Note, Bill of Supply, Delivery Challan, GSTR-1 / GSTR-3B JSON exports, GSTR-2B reconciliation, e-Way Bill, TDS / TCS reports (Form 26Q / 27EQ), multi-currency for 22 countries, per-line custom units, rich-text Terms with 13 India presets, granular backup with optional Google Drive sync. Offline-first PWA. By EasyGSTBilling.",
   "author": "EasyGSTBilling <support@easygstbilling.com>",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/Sasuke021990/EasyGSTBilling.git"
@@ -36,7 +37,6 @@
     "bill-of-supply",
     "pdf-generator",
     "offline-billing",
-    "open-source",
     "vyapar-alternative",
     "tally-alternative",
     "zoho-alternative",

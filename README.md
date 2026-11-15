@@ -2,7 +2,7 @@
 
 **Offline-first GST invoicing for Indian businesses. Runs on your own computer. No account, no subscription, no tracking.**
 
-[![Licence](https://img.shields.io/badge/licence-MIT-green.svg)](LICENSE)
+[![Licence](https://img.shields.io/badge/licence-proprietary-red.svg)](LICENCE-EasyGSTBilling.md)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Docker-blue.svg)](#get-it-running)
 
@@ -84,7 +84,7 @@ Reads `.env` from the books folder first, then the app folder. If the books alre
 - The server answers `http://localhost` only, with a host-header check (blocks DNS rebinding) and strict CORS.
 - Phone/tablet access is opt-in, LAN-only, HTTPS with a device pairing code plus the PIN; only token hashes are stored.
 - Error reports are redacted (no GSTINs, phone numbers, e-mail addresses, UPI IDs or file paths).
-- Everything is auditable MIT source. See [SECURITY.md](SECURITY.md) for how to report a problem.
+- The full source is published on GitHub, so you can read exactly what the app does. See [SECURITY.md](SECURITY.md) for how to report a problem.
 
 ## Development
 
@@ -99,9 +99,11 @@ Project layout: `src/` React UI · `src/utils/` domain logic (tax engine in `src
 
 Releases are cut with `npm run release:zip` (lint + tests + build + checks).
 
-## Licence and attribution
+## Licence
 
-MIT — see [LICENSE](LICENSE). EasyGSTBilling is based on Free GST Billing Software by DiceCodes; the original copyright notice is retained in the licence as MIT requires. Details in [NOTICE](NOTICE).
+EasyGSTBilling is distributed under a proprietary licence: [LICENCE-EasyGSTBilling.md](LICENCE-EasyGSTBilling.md). In short — you may use it free for your own business bookkeeping on machines you control; you may not redistribute it, resell it, or publish modified builds without written agreement. Your business data created with it is yours.
+
+The upstream portions remain MIT-licensed, and the original licence is kept in [LICENSE](LICENSE) with attribution in [NOTICE](NOTICE): EasyGSTBilling is based on Free GST Billing Software by DiceCodes.
 
 ## Contact
 

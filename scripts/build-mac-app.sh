@@ -125,7 +125,7 @@ cat > "$APP/Contents/Info.plist" <<EOF
   <key>LSMinimumSystemVersion</key><string>11.0</string>
   <key>LSApplicationCategoryType</key><string>public.app-category.business</string>
   <key>NSHighResolutionCapable</key><true/>
-  <key>NSHumanReadableCopyright</key><string>EasyGSTBilling. MIT License.</string>
+  <key>NSHumanReadableCopyright</key><string>Copyright (c) 2026 EasyGSTBilling. LICENCE-EasyGSTBilling.md.</string>
 </dict>
 </plist>
 EOF

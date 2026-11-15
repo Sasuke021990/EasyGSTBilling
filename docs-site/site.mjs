@@ -21,7 +21,7 @@ export const SITE = {
 export const SEO = {
   index: {
     title: 'EasyGSTBilling for India: documentation and user guide',
-    description: 'Free, open-source GST billing software for Windows, Mac and Linux. Make GST invoices, track payments and stock, and prepare GSTR-1 and GSTR-3B. No signup, works offline.',
+    description: 'EasyGSTBilling: offline GST billing software for Windows, Mac and Linux. Make GST invoices, track payments and stock, and prepare GSTR-1 and GSTR-3B. No signup, works offline.',
   },
   install: {
     title: 'How to install EasyGSTBilling on Windows, Mac and Linux',

@@ -22,7 +22,7 @@ clear
 echo
 echo "  ┌────────────────────────────────────────────────┐"
 echo "  │   EasyGSTBilling                    │"
-echo "  │   Open-source · Offline-first · No signup      │"
+echo "  │   Offline-first · Free to use · No signup      │"
 echo "  └────────────────────────────────────────────────┘"
 echo
 

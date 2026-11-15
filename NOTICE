@@ -1,9 +1,14 @@
 EasyGSTBilling
 Copyright (c) 2026 EasyGSTBilling
 
+EasyGSTBilling is distributed under the terms in LICENCE-EasyGSTBilling.md
+(proprietary licence; use permitted, redistribution and derivative builds are
+not without written agreement).
+
 This product includes software developed by DiceCodes
 (https://github.com/IamRamgarhia/Free-GST-Billing-Software),
-Copyright (c) 2026 DiceCodes, released under the MIT licence.
-See the LICENSE file for the full licence text. The original copyright
-notice is retained there as MIT requires; upstream names, marks and logos
-are not used to endorse or promote this product.
+Copyright (c) 2026 DiceCodes, released under the MIT licence. The full licence
+text is kept in the LICENSE file, as MIT requires; the original copyright
+notice is retained there. That notice does not imply DiceCodes endorses this
+product. Upstream names, marks and logos are not used to endorse or promote
+EasyGSTBilling.

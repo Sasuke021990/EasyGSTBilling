@@ -1,5 +1,5 @@
-// v1.10.83 - "Is this open-source app safe?" answered where people first ask
-// it: the welcome screen and Support & About. Every line here must stay true;
+// v1.10.83 - "Is this app safe to keep my books in?" answered where people first ask
+// it: the welcome screen and About & Support. Every line here must stay true;
 // the full, checked answer is the docs page docs-site/pages/security.mjs.
 import { ShieldCheck, HardDrive, UserX, WifiOff, EyeOff, Network, Code, Download, Archive, KeyRound, Bug, RefreshCw, ListChecks } from 'lucide-react';
 import { docsLink } from '../utils';
@@ -8,7 +8,7 @@ const POINTS = [
   'Your business data stays on this computer',
   'No account, no login, no ads',
   'Works without internet',
-  'Free and open source: anyone can check the code',
+  'Source is published on GitHub: anyone can read it',
 ];
 
 export default function SafePrivateNote({ style }) {
@@ -31,7 +31,7 @@ export default function SafePrivateNote({ style }) {
   );
 }
 
-// v1.10.83 - the full list, as its own section on Support & About ("make
+// v1.10.83 - the full list, as its own section on About & Support ("make
 // this safe and private a different section and bigger, with every point").
 // Each line is a summary of a section of docs-site/pages/security.mjs.
 const SAFETY = [
@@ -40,7 +40,7 @@ const SAFETY = [
   { icon: WifiOff, title: 'Works without internet', text: 'Invoices, PDFs, reports and GST returns all work offline. Turn on Offline mode (Settings → Privacy & Security → Privacy & internet) and the app never goes online by itself.', doc: 'security#offline-mode' },
   { icon: EyeOff, title: 'No tracking, no ads', text: 'No analytics and nothing sent to us. We never see your invoices, amounts, GSTIN or bank details. Free because we earn from paid work for businesses, not from data.', doc: 'security#why-free' },
   { icon: Network, title: 'Other computers cannot open it', text: 'The app answers only this computer, not your Wi-Fi or office network, and refuses requests from other websites. Phones you pair yourself can use it on your own Wi-Fi, only if you turn that on.', doc: 'security#network' },
-  { icon: Code, title: 'Open source', text: 'Anyone can read the code on GitHub, and a developer can build the app from it themselves.', doc: 'security#open-source' },
+  { icon: Code, title: 'Source you can read', text: 'The full program code is published on GitHub, so anyone — you, your IT person, a security researcher — can read every line of it.', doc: 'security#open-source' },
   { icon: Download, title: 'A safe install', text: 'No administrator rights, no system changes. It downloads only from this project’s GitHub page, and your data is backed up first.', doc: 'security#install-safety' },
   { icon: Archive, title: 'Daily backups', text: 'Every day your data is copied into a dated backup, kept for 30 days. Add a second folder on another drive for a copy there too.', doc: 'security#backups-and-lock' },
   { icon: KeyRound, title: 'Optional PIN lock', text: 'On a shared computer, lock the app with a PIN. It is stored only as a scrambled check value, never as the digits.', doc: 'security#backups-and-lock' },

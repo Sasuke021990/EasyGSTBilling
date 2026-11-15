@@ -1,4 +1,4 @@
-// v1.10.83 - "Is this open-source app safe?" (asked by users; the maintainer
+// v1.10.83 - "Is this app safe to keep my books in?" (asked by users; the maintainer
 // wanted it answered in the first run and in the docs). Every sentence here was
 // checked against the code. When the app starts contacting a new address, or
 // stops, update #what-it-connects-to: it is the list people rely on.
@@ -11,7 +11,7 @@ export default [
   slug: 'security',
   title: 'Is it safe? Security and privacy',
   nav: 'Is it safe?',
-  lead: 'Plain answers for anyone who has heard "open source" and wonders whether it is safe to keep their business books in it: where your data is, what the app connects to, and how to check it yourself.',
+  lead: 'Plain answers for anyone who wonders whether it is safe to keep their business books in it: where your data is, what the app connects to, and how to check it yourself.',
   body: `
 <div class="note tip"><strong>The short answer</strong>
 <p>Your invoices, clients and settings are saved as files on your own computer. There is no account, no login and no cloud server of ours. The app has no ads and no tracking, and it sends none of your business data to us. Every line of its code is public, so anyone can check this.</p>
@@ -83,7 +83,7 @@ export default [
 <h2>Why is it free? What is the catch?</h2>
 <p>There is no catch, and your data is not the product.</p>
 <ul>
-  <li><strong>It stays free, forever.</strong> There will be no paid version, no locked features, no ads and no tracking. And because the code is open source under the MIT licence, the app you have today can always be used, copied and kept by anyone, even if we stopped working on it. Nobody can take it away or start charging you for it.</li>
+  <li><strong>It stays free, forever.</strong> There will be no paid version, no locked features, no ads and no tracking. The app runs entirely on your own computer, so it keeps working even if this project ever stops. Your books stay yours.</li>
   <li><strong>It costs very little to keep going.</strong> The app runs on your computer, so there are no servers and no cloud bills for us to pay.</li>
   <li><strong>How we earn.</strong> EasyGSTBilling is made by EasyGSTBilling, a small software company in India. We earn from paid work for businesses that want it (custom features, setup and moving data in, support plans) and from people who choose to support the project. See <a href="support.html">Support &amp; About</a>.</li>
   <li><strong>Tracking you would gain us nothing.</strong> We do not sell ads or data, so there is nothing to collect. Collecting your data would also break the one promise the app is built on.</li>
@@ -125,9 +125,9 @@ export default [
 </section>
 
 <section id="open-source">
-<h2>What "open source" means here</h2>
-<p>Open source means the full program code is public. EasyGSTBilling's code is on <a href="${SITE.repo}">GitHub</a> under the MIT licence. Anyone (you, your IT person, a developer friend, a security researcher) can read every line and see exactly what it does. Nothing is hidden.</p>
-<p>That is the opposite of a risk: a closed program asks you to trust it, while this one lets you check it. Many people look at the code, and problems they find are reported in public.</p>
+<h2>What "source you can read" means here</h2>
+<p>The full program code is public: EasyGSTBilling's source is on <a href="${SITE.repo}">GitHub</a>. Anyone (you, your IT person, a security researcher) can read every line and see exactly what it does. Nothing is hidden.</p>
+<p>That is the opposite of a risk: a closed program asks you to trust it, while this one lets you check it. Many people look at the code, and problems they find are reported in public. (The app is free to use, but it is not open-source software under a code licence — see the <a href="${SITE.repo}/blob/main/LICENCE-EasyGSTBilling.md">licence</a>. You may not redistribute it or publish modified builds.)</p>
 <h3>How a careful user can check</h3>
 <ul>
   <li><strong>Read the code.</strong> The places to look: <code>server.js</code> (the built-in server, and the only outgoing call it makes: the update check), <code>src/</code> (the screens), <code>src/index.html</code> (the list of addresses the page may contact), and <code>install.ps1</code> / <code>install.sh</code> (the install line).</li>

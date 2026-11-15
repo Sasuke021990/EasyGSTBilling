@@ -121,7 +121,7 @@ export default function WelcomeGuide({ onComplete }) {
               </div>
               <h1 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem', color: 'var(--text-primary)' }}>Welcome to EasyGSTBilling <HelpButton title="Welcome" doc="first-run#welcome" size={16} /></h1>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                Free, open-source GST billing software that runs 100% on your computer. Your data never leaves your machine.
+                EasyGSTBilling: GST billing software that runs 100% on your computer. Your data never leaves your machine.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2rem', textAlign: 'left' }}>

@@ -247,6 +247,6 @@
 
 
 ===========================================================
-  This software is free and open source (MIT licence).
+  This software is free to use for your own business (see LICENCE-EasyGSTBilling.md).
   If it saves you money, tell another shop owner about it.
 ===========================================================

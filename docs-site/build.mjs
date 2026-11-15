@@ -182,7 +182,6 @@ function jsonLd(p, title, description) {
       applicationSubCategory: 'GST billing and invoicing',
       operatingSystem: 'Windows 10, Windows 11, macOS, Linux',
       softwareVersion: SITE.version,
-      license: 'https://opensource.org/licenses/MIT',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
       downloadUrl: SITE.download,
@@ -306,7 +305,7 @@ ${body}
       ${next ? `<a class="next" href="${next.slug}.html"><span>Next</span>${esc(next.nav || next.title)}</a>` : '<span></span>'}
     </nav>
     <footer class="foot">
-      <p>${esc(BRAND)} is free and open source under the MIT licence, made by <a href="${SITE.publisher.url}">${esc(SITE.publisher.name)}</a>. Something wrong or missing on this page?
+      <p>${esc(BRAND)} is free to use (see the <a href="${SITE.repo}/blob/main/LICENCE-EasyGSTBilling.md">licence</a>), made by <a href="${SITE.publisher.url}">${esc(SITE.publisher.name)}</a>. Something wrong or missing on this page?
       <a href="${SITE.repo}/issues">Tell us on GitHub</a>.</p>
     </footer>
   </main>
@@ -347,7 +346,7 @@ function llmsTxt() {
   const lines = [
     `# ${BRAND}`,
     '',
-    `> Free, open-source GST billing and invoicing software for small businesses in India, also usable in 20 currencies. It runs on the user's own Windows, macOS or Linux computer and opens in the web browser; there is no account, no subscription and no cloud. Version ${SITE.version}, made by ${SITE.publisher.name}.`,
+    `> EasyGSTBilling: GST billing and invoicing software for small businesses in India, free to use, also usable in 20 currencies. It runs on the user's own Windows, macOS or Linux computer and opens in the web browser; there is no account, no subscription and no cloud. Version ${SITE.version}, made by ${SITE.publisher.name}.`,
     '',
     'It makes GST tax invoices, bills of supply, proforma estimates, credit notes and delivery challans; works out CGST, SGST, UTGST and IGST; tracks payments, clients, products and stock, purchases and expenses; and prepares GSTR-1 and GSTR-3B JSON for the GST portal. It does not file returns itself and does not generate e-invoice IRNs.',
     '',
