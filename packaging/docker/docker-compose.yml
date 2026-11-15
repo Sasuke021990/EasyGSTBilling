@@ -1,0 +1,59 @@
+# EasyGSTBilling on a NAS or home server, with Docker.
+#   1. Copy .env.example to .env and put your own PIN in it (6 or 8 digits),
+#      and your NAS's address below (FGSB_PHONE_HOSTS).
+#   2. Start:  docker compose up -d
+#   3. Pair:   docker logs easygstbilling   shows a link with a pairing code.
+#      Open it on your phone, tablet or PC (same network), accept the
+#      certificate warning once (see below) and type the PIN.
+#   Stop:      docker compose down     (your books stay in the volume)
+#
+# Your books are in the "easygst-data" volume (/data in the container).
+# Backups go to /data/backups inside the same volume (change the folder in
+# the app: Control Panel -> backup folder), or mount your own path:
+#   - /path/on/nas/backups:/data/backups
+#
+# SAFETY: every device must be paired (a one-time code + the PIN) before it can
+# open anything; the connection is encrypted (HTTPS, with a certificate the
+# app makes for itself); only addresses on your local network are answered.
+# NEVER forward port 47443 on your router: the app is for your own network.
+# More devices: on a paired one, Settings -> Privacy & Security -> Use on phone
+# or tablet -> Pair a phone or tablet. Remove a device there too.
+#
+# The first time, the browser says "Your connection is not private": the
+# certificate is the app's own, not from a company browsers know. The sure
+# check: tap the warning next to the address -> certificate; its SHA-256
+# fingerprint must be the same on every device you pair (the pairing page shows
+# its start too, but a fake page could copy that).
+# Then: Advanced -> Proceed (Chrome) or Show Details -> visit this website (Safari).
+services:
+  easygstbilling:
+    # Published on GitHub Packages for every release (.github/workflows/docker-image.yml).
+    # To update: put the new version here, then  docker compose pull && docker compose up -d
+    image: ghcr.io/sasuke021990/easygstbilling:__VERSION__
+    container_name: easygstbilling
+    restart: unless-stopped
+    init: true
+    env_file:
+      - .env
+    environment:
+      # Phone / tablet / other-PC access with pairing. Always on in Docker:
+      # it is the only way in. Every device must pair first.
+      FGSB_PHONE_ACCESS: "1"
+      # Your NAS's address or name as you type it in the browser (for the
+      # pairing link in the log, and the certificate). Example: 192.168.1.50
+      FGSB_PHONE_HOSTS: ""
+      TZ: Asia/Kolkata
+    ports:
+      - "47443:47443"
+    volumes:
+      - easygst-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  easygst-data:
